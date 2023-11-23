@@ -1,1 +1,10 @@
-/*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+@import "../bootstrap-5.3.2-dist/css/bootstrap.css";
+.navbar {
+  border-bottom: 1px solid white;
+  transition: all 0.3s ease;
+}
+.navbar .bg-white {
+  background: white !important; /* Ajoutez cette ligne pour définir la couleur de fond en blanc */
+  border-bottom: 1px solid blue !important; /* Ajoutez cette ligne pour la bordure après le changement de couleur */
+}/*# sourceMappingURL=style.css.map */
