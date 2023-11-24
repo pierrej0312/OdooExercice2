@@ -26,67 +26,735 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="style.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Wed integrator exercice</title>
-  </head>
-  <body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="style.css">
 
-    <nav class="container navbar navbar-expand-lg navbar-light bg-transparent animate__animated animate__fadeInDown sticky-top">
+  <title>Wed integrator exercice</title>
+</head>
+
+<body>
+
+  <div class="container-fluid nav-container sticky-top bg-primary">
+    <nav class="container navbar navbar-expand-lg navbar-light animate__animated animate__fadeInDown">
       <a class="navbar-brand" href="#">
-          <img src="assets/odoo-white.svg" width="30" class="d-inline-block align-top" alt="Logo ODOO">
+        <img src="assets/odoo-white.svg" height="30" class="d-inline-block align-center logo-white" alt="Logo ODOO">
+        <img src="assets/odoo-colorful.svg" height="30" class="align-center logo-color d-none" alt="Logo ODOO">
       </a>
-  
+
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav">
-              <!-- Add your navbar items here -->
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Item 1</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Item 2</a>
-              </li>
-              <!-- Add more items as needed -->
-          </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">App</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Docs</a>
+          </li>
+        </ul>
       </div>
-  
+
       <div class="navbar-nav ml-auto">
-          <button class="btn btn-secondary mr-2">Sign In</button>
-          <button class="btn btn-primary">
-              <i class="bi bi-bag"></i> Buy Now
-          </button>
+        <button class="btn btn-secondary bg-transparent border-0 mr-2">Sign In</button>
+        <button class="btn btn-light">
+          <i class="bi bi-bag"></i> Buy Now
+        </button>
       </div>
     </nav>
+  </div>
 
-    <header class="container" style="height: 80vh; background-color: blue;">
-      
-    </header>
+  <div class="container-fluid nav-container" style="width: 100%; overflow: hidden;"></div>
+  <header class="container mx-auto row align-center mb-10 pb-5 pt-5 mb-5"
+    style="height: 80vh; max-height: 850px; min-height: fit-content;">
+    <div class="col-7 text-white align-self-center animate__animated animate__fadeInLeft jumbotron bg-transparent p-0">
+      <div class="col-9 g-3 mb-5 pr-0 pl-0">
+        <h1 class="mb-5 lh-lg">Developpment done right</h1>
+        <p class="mb-5 lead">Build a beautiful, modern website with flexible components built from scratch.</p>
+        <button class="btn btn-light btn-lg">
+          Get started <i class="bi bi-plus"></i>
+        </button>
+      </div>
+      <div class="row mr-0 ml-0">
+        <p>Trusted by:</p>
+        <ul class="list-unstyled row ml-1">
+          <li class="col">
+            <img src="assets/google-white.svg" height="25" alt="logo google">
+          </li>
+          <li class="col">
+            <img src="assets/spotify-white.svg" height="25" alt="logo google">
+          </li>
+          <li class="col">
+            <img src="assets/airbnb-white.svg" height="25" alt="logo google">
+          </li>
+          <li class="col">
+            <img src="assets/paypal-white.svg" height="25" alt="logo google">
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col align-self-center animate__animated animate__fadeInUp bg-white p-4 shadow-lg"
+      style="border-radius: 1rem 1rem 5rem 1rem;">
+      <div class="row justify-content-between align-items-center mr-0 ml-0 mb-3">
+        <p class="h6 mb-0 lh-1 custom-fit-content">Manage cards</p>
+        <button class="btn btn-light">
+          Add new
+        </button>
+      </div>
+      <div class="world-map p-4 text-white d-flex flex-column justify-content-between">
+        <div class="row justify-content-between align-items-center mr-0 ml-0">
+          <img src="assets/mastercard.svg" height="20" alt="mastercard logo">
+          <span class="badge badge-success">Active</span>
+        </div>
+        <div class="p-0">
+          <p class="text-uppercase mb-0 small">Card Number</p>
+          <p class="mb-0" style="font-size: clamp(1.5rem, 2vw, 1.9rem)">4358 - 7421 - 9256 - 6682</p>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <p class="text-uppercase mb-0 small">Name</p>
+            <p class="h6 mb-0">John Snow</p>
+          </div>
+          <div class="col-6">
+            <p class="text-uppercase mb-0 small">Expiry date</p>
+            <p class="h6 mb-0">11/23</p>
+          </div>
+        </div>
+      </div>
+      <ul class="list-group list-group-flush mb-3">
+        <li class="list-group-item pr-0 pl-0 row d-flex justify-content-between">
+          <dl class="col-8 mb-0">
+            <dt class="h6">Starbucks</dt>
+            <dd class="small text-muted">Pending - San Francisco, United States</dd>
+          </dl>
+          <p class="h6 col-sm-4 text-right">$5,50 USD</p>
+        </li>
+        <li class="list-group-item pr-0 pl-0 row d-flex justify-content-between">
+          <dl class="col-8 mb-0">
+            <dt class="h6">Nike Sports</dt>
+            <dd class="small text-muted">Pending - Lisbon, Portugal</dd>
+          </dl>
+          <p class="h6 col-sm-4 text-right">$129,00 USD</p>
+        </li>
+      </ul>
+      <a href="#" class="button-with-dots font-weight-bold text-sm" style="text-decoration: none;">View all ></a>
+    </div>
+  </header>
+  </div>
 
-    <main class="container" style="min-height: 100vh;">
+  <span class="header-background"></span>
 
-    </main>
+  <main class="container-fluid mx-auto pt-5 mb-5 pb-5 d-flex flex-column gap-3"
+    style="min-height: 200vh; gap: 12rem; width: 100%; overflow-x: hidden; box-sizing: border-box;">
 
-    <footer class="container">
+    <div class="row container mx-auto justify-content-center align-items-center">
+      <div class="position-relative col-7 fadeInLeftRevelator hidden" style="aspect-ratio: 3/2;">
+        <div class="position-absolute rounded top-0 start-100 translate-middle p-2 w-50 shadow-lg"
+          style="aspect-ratio: 5/4; background: url(assets/img_01.jpg); background-size: cover; right: 5rem; z-index: 2;">
+          <button class="btn btn-light btn-sm" style="position: absolute; right: 4%; z-index: 1;">
+            Play video<i class="bi bi-play"></i>
+          </button>
+        </div>
+        <div class="card position-absolute rounded top-50 start-0 p-2 shadow"
+          style="top: 25%; height: 75%; width: 75%; z-index: 0;">
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-mute mb-0 lh-1 custom-fit-content">Awesome projects</h6>
+            <ul class="list-group list-group-flush d-flex flex-column justify-content-between h-100">
+              <li class="list-group-item pr-0 pl-0 border-0">
+                <div class="row justify-content-between ml-0 mr-0">
+                  <p>Create the new logo</p>
+                  <a href="#" class="text-muted">3:50 ></a>
+                </div>
+                <div class="progress" style="height: .3rem;">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li class="list-group-item pr-0 pl-0 border-0">
+                <div class="row justify-content-between ml-0 mr-0">
+                  <p>Set up the color palette</p>
+                  <a href="#" class="text-muted">4:00 ></a>
+                </div>
+                <div class="progress" style="height: .3rem;">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li class="list-group-item pr-0 pl-0 border-0">
+                <div class="row justify-content-between ml-0 mr-0">
+                  <p>Wireframe and prototype</p>
+                  <a href="#" class="text-muted">6:50 ></a>
+                </div>
+                <div class="progress" style="height: .3rem;">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col" style="height: fit-content;">
+        <span class="badge badge-pill badge-warning mb-4 text-white">Tools</span>
+        <h2 class="mb-4">We build for designers and developers</h2>
+        <p class="mb-4">
+          Get components and examples, including tons of variables that will help you grow your business.
+        </p>
+      </div>
+    </div>
+    <div class="row container mx-auto justify-content-center align-items-center">
+      <div class="col" style="height: fit-content;">
+        <span class="badge badge-pill badge-success mb-4">Features</span>
+        <h4 class="mb-4">Get components and examples, including tons of variables that will help you grow your business.
+        </h4>
+        <ul class="list-group list-group-flush d-flex flex-column">
+          <li class="list-group-item pr-0 pl-0 border-0">
+            <p class="mb-0 text-success">
+              <i class="bi bi-check-square-fill"></i>
+              Perfect for modern startups
+            </p>
+          </li>
+          <li class="list-group-item pr-0 pl-0 border-0">
+            <p class="mb-0 text-success">
+              <i class="bi bi-check-square-fill"></i>
+              Fully customizable and scalable
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="position-relative col-6 fadeInRightRevelator hidden" style="aspect-ratio: 3/2;">
+        <div class="position-absolute rounded top-0 start-100 translate-middle p-2 w-75 shadow-lg"
+          style="aspect-ratio: 5/4; background: url(assets/img_02.jpg); background-size: cover; right: 0rem; z-index: 2;">
+          <button class="btn btn-light btn-sm" style="position: absolute; left: 4%; z-index: 1;">
+            Play video<i class="bi bi-play"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row container mx-auto justify-content-center align-items-center">
+      <div class="col-7 fadeInLeftRevelator hidden d-flex flex-column justify-content-center p-0"
+        style="aspect-ratio: 3/2;">
+        <div class="row align-items-center" style="gap: 0rem;">
+          <div class="col-6 d-flex flex-column" style="gap: 2rem;">
+            <div class="card rounded p-0 w-100 shadow-lg">
+              <img src="assets/person_03.jpg" class="card-img-top" alt="man looking camera while he is smiling">
+              <div class="card-body row justify-content-between mr-0 ml-0 align-items-center">
+                <div class="row mr-0 ml-0 align-items-center" style="gap: .5rem;">
+                  <h6 class="rounded-circle bg-warning d-flex justify-content-center align-items-center text-white mb-0"
+                    style="height: 30px; width: 30px;">JH</h6>
+                  <p class="small mb-0">Jimmy Hendrix</p>
+                </div>
+                <i class="bi bi-heart"></i>
+              </div>
+            </div>
+            <div class="card rounded p-0 w-100 shadow-lg">
+              <div class="card-body row mr-0 ml-0 align-items-center w-100" style="gap: 1rem;">
+                <h6
+                  class="rounded-circle bg-success d-flex justify-content-center align-items-center text-white md-0 p-0"
+                  style="height: 40px; width: 40px;"><i class="bi bi-check2"></i></h6>
+                <div class="col p-0">
+                  <h6>300+ components</h6>
+                  <p class="text-muted small mb-0">Built to be customized.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 d-flex flex-column" style="gap: 2rem;">
+            <div class="card rounded p-0 w-100 shadow-lg">
+              <div
+                class="card-body col d-flex flex-column justify-content-center align-items-center mr-0 ml-0 align-items-center pt-5 pb-5"
+                style="gap: 1rem;">
+                <img src="assets/airbnb.svg" height="30" alt="airbnb logo">
+                <div class="row justify-content-center" style="gap: .3rem;">
+                  <i class="bi bi-star text-warning"></i>
+                  <i class="bi bi-star text-warning"></i>
+                  <i class="bi bi-star text-warning"></i>
+                  <i class="bi bi-star text-warning"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                <div class="col d-flex flex-column align-items-center mr-0 ml-0 p-0">
+                  <h6 class="mb-0">4.95 out of 5 stars</h6>
+                  <p class="text-muted">from 23 reviews</p>
+                </div>
+              </div>
+            </div>
+            <div class="card rounded p-0 w-100 shadow-lg">
+              <div
+                class="card-body col d-flex flex-column justify-content-center align-items-center mr-0 ml-0 align-items-center pt-5 pb-5"
+                style="gap: 1rem;">
+                <img src="assets/company_01.png" height="60" class="rounded-circle" alt="logo">
+                <h6 class="mb-0">Website UI Kit</h6>
+                <div class="row d-flex align-items-center mr-0 ml-0 p-0">
+                  <img src="assets/person_01.jpg" height="40" width="40" class="rounded-circle" alt="man"
+                    style="object-fit: cover; border: 3px solid white;">
+                  <img src="assets/person_02.jpg" height="40" width="40" class="rounded-circle" alt="man"
+                    style="object-fit: cover; border: 3px solid white; margin-left: -1rem;">
+                  <img src="assets/person_03.jpg" height="40" width="40" class="rounded-circle" alt="man"
+                    style="object-fit: cover; border: 3px solid white; margin-left: -1rem;">
+                </div>
+                <hr class="my-1">
+                <div class="row justify-content-center" style="gap: 1rem;">
+                  <i class="bi bi-link-45deg"></i>
+                  <i class="bi bi-eye"></i>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" style="height: fit-content;">
+        <span class="badge badge-pill badge-primary mb-4">Technology</span>
+        <h2 class="mb-4">We use the latest technologies on the market</h2>
+        <p class="mb-4">
+          Get components and examples, including tons of variables that will help you grow your business.
+        </p>
+        <a href="#" class="button-with-dots font-weight-bold text-sm" style="text-decoration: none;">See case
+          studies</a>
+      </div>
+    </div>
+    <div class="row container mx-auto justify-content-center align-items-center">
+      <div class="col" style="height: fit-content;">
+        <span class="badge badge-pill badge-warning mb-4 text-white">Easy to install</span>
+        <h2 class="mb-4">Download, install and run.</h2>
+        <p class="mb-4">
+          Get components and examples, including tons of variables that will help you grow your business.
+        </p>
+        <ul class="list-group list-group-flush d-flex mt-5 row flex-row m-0" style="gap: 1rem;">
+          <li class="list-group-item pr-0 pl-0 border-0 col-5">
+            <a href="#"
+              class="mb-0 text-white bg-dark p-3 rounded row align-items-center justify-content-center w-100 m-0">
+              <i class="bi bi-apple h2 mb-0"></i>
+              <div class="col p-0 ml-3">
+                <p class="small mb-0">Download on the</p>
+                <h5 class="mb-0">App Store</h5>
+              </div>
+            </a>
+          </li>
+          <li class="list-group-item pr-0 pl-0 border-0 col-5">
+            <a href="#" class="mb-0 text-white bg-dark p-3 rounded row align-items-center justify-content-center m-0">
+              <i class="bi bi-google-play h2 mb-0"></i>
+              <div class="col p-0 ml-3">
+                <p class="small mb-0">Download on the</p>
+                <h5 class="mb-0">Play Store</h5>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="position-relative col-6 fadeInRightRevelator hidden" style="aspect-ratio: 3/2;">
+        <div class="position-absolute rounded top-0 start-100 translate-middle p-2 w-75 shadow-lg"
+          style="aspect-ratio: 5/4; background: url(assets/img_03.jpg); background-size: cover; right: 0rem; z-index: 2;">
+          <button class="btn btn-light btn-sm" style="position: absolute; left: 4%; z-index: 1;">
+            Play video<i class="bi bi-play"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row container mx-auto justify-content-between align-items-center p-5 text-white"
+      style="background: radial-gradient(268.97% 141.96% at 0% 102.43%, #171346 0%, #271348 100%); border-radius: 0rem 5rem 0rem 5rem;">
+      <div class="col-7">
+        <h4 class="mb-4">Infinite solutions
+        </h4>
+        <p>Intuitive markup, powerful and lightning-fast build tools,
+          everything you need to turn your ideas into incredible products.
+        </p>
+      </div>
+      <button class="btn btn-light">
+        Learn more <i class="bi bi-arrow-right ml-1"></i>
+      </button>
+    </div>
 
-    </footer>
+  </main>
+  <section class="container-fluid mx-auto bg-light mt-5 d-flex flex-column gap-3 pl-0 pr-0"
+    style=" width: 100%; overflow-x: hidden; box-sizing: border-box;">
+    <span class="custom-diagonal-top w-100"></span>
+    <div class="d-flex flex-column container mx-auto pt-5 pb-5 mt-5 mb-5">
+      <div class="col" style="height: fit-content;">
+        <span class="badge badge-pill badge-primary mb-4 text-white">Awards</span>
+        <h5 class="mb-4">Awards for design, creativity, and innovation on the Internet
+        </h5>
+      </div>
+      <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="10000">
+            <ul class="row w-75 mx-auto p-0 justify-content-center align-odd flex-nowrap overflow-scroll pt-5 pb-5"
+              style="height: 400px;">
+              <li class="col d-flex flex-column cards3d" style="max-width: 250px;">
+                <a href="#" class="card rounded p-0 w-100 shadow-lg card3d">
+                  <div
+                    class="card-body card3d_title col d-flex flex-column justify-content-center align-items-center mr-0 ml-0 align-items-center pt-5 pb-5"
+                    style="gap: 1rem;">
+                    <img src="assets/airbnb.svg" height="30" alt="airbnb logo">
+                    <div class="row justify-content-center" style="gap: .3rem;">
+                      <i class="bi bi-star text-warning"></i>
+                      <i class="bi bi-star text-warning"></i>
+                      <i class="bi bi-star text-warning"></i>
+                      <i class="bi bi-star text-warning"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                    <div class="col d-flex flex-column align-items-center mr-0 ml-0 p-0">
+                      <h6 class="mb-0">4.95 out of 5 stars</h6>
+                      <p class="text-muted">from 23 reviews</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="col d-flex flex-column cards3d" style="max-width: 250px;">
+                <a href="#" class="card rounded p-0 w-100 shadow-lg  card3d">
+                  <div
+                    class="card-body card3d_title col d-flex flex-column justify-content-center align-items-center mr-0 ml-0 align-items-center pt-5 pb-5"
+                    style="gap: 1rem;">
+                    <img src="assets/amazon.svg" height="30" alt="amazon logo">
+                    <p class="text-muted text-center">They build modern looking websites easily using Tabs.</p>
+                    <span class="button-with-dots font-weight-bold text-sm">Learn more</span>
+                  </div>
+                </a>
+              </li>
+              <li class="col d-flex flex-column cards3d" style="max-width: 250px;">
+                <a href="#" class="card rounded p-0 w-100 shadow-lg card3d">
+                  <div
+                    class="card-body card3d_title col d-flex flex-column justify-content-center align-items-center mr-0 ml-0 align-items-center pt-5 pb-5"
+                    style="gap: 1rem;">
+                    <img src="assets/slack.svg" height="30" alt="amazon logo">
+                    <p class="text-muted text-center">They build modern looking websites easily using Tabs.</p>
+                    <span class="button-with-dots font-weight-bold text-sm">Learn more</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="carousel-item" data-interval="2000">
+            <ul class="row w-75 mx-auto justify-content-center p-0 align-odd flex-nowrap overflow-scroll pt-5 pb-5"
+              style="height: 400px;">
+              <li class="col d-flex flex-column cards3d" style="max-width: 250px;">
+                <a href="#" class="card rounded p-0 w-100 shadow-lg card3d">
+                  <div
+                    class="card-body card3d_title col d-flex flex-column justify-content-center align-items-center mr-0 ml-0 align-items-center pt-5 pb-5"
+                    style="gap: 1rem;">
+                    <img src="assets/spotify.svg" height="30" alt="airbnb logo">
+                    <div class="row justify-content-center" style="gap: .3rem;">
+                      <i class="bi bi-star text-warning"></i>
+                      <i class="bi bi-star text-warning"></i>
+                      <i class="bi bi-star text-warning"></i>
+                      <i class="bi bi-star text-warning"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                    <div class="col d-flex flex-column align-items-center mr-0 ml-0 p-0">
+                      <h6 class="mb-0">4.95 out of 5 stars</h6>
+                      <p class="text-muted">from 23 reviews</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="col d-flex flex-column cards3d" style="max-width: 250px;">
+                <a href="#" class="card rounded p-0 w-100 shadow-lg card3d">
+                  <div
+                    class="card-body card3d_title col d-flex flex-column justify-content-center align-items-center mr-0 ml-0 align-items-center pt-5 pb-5"
+                    style="gap: 1rem;">
+                    <img src="assets/paypal.svg" height="30" alt="amazon logo">
+                    <p class="text-muted text-center">They build modern looking websites easily using Tabs.</p>
+                    <span href="#" class="button-with-dots font-weight-bold text-sm">Learn more</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="carousel-control-prev bg-transparent border-0 text-dark" type="button"
+          data-target="#carouselExampleInterval" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next bg-transparent border-0 text-dark" type="button"
+          data-target="#carouselExampleInterval" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+    </div>
+    <span class="custom-diagonal-bottom w-100"></span>
+  </section>
+  <section class="container-fluid mx-auto mt-5 d-flex flex-column gap-3 pl-0 pr-0"
+    style=" width: 100%; overflow-x: hidden; box-sizing: border-box;">
+    <div class="d-flex flex-column justify-content-center align-items-center container mx-auto pt-5 pb-5 mt-5 mb-5">
+      <h2 class="mb-4">Helpful answers
+      </h2>
+      <h5 class="mb-4 text-muted mb-5">Start building fast, beautiful, and modern-looking websites in no time.
+      </h5>
+      <div class="row w-100" style="gap: 2rem;">
+        <div class="accordion col p-0 m-0 w-100" style="gap: 2rem;" id="accordionOne">
+          <div class="card mb-5 w-100 shadow rounded">
+            <div class="card-header bg-white w-100" id="headingOne">
+              <h2 class="mb-0">
+                <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                  aria-controls="collapseOne"
+                  class="btn btn-link text-left row w-100 d-flex justify-content-between text-dark"
+                  style="text-decoration: none;">
+                  <span class="h6 mb-0"><i class="bi bi-file-earmark"></i> Which license do I need?</span>
+                  <i class="bi bi-plus"></i>
+                </button>
+              </h2>
+            </div>
 
-    
+            <div id="collapseOne" class="collapse border-0" aria-labelledby="headingOne" data-parent="#accordionOne">
+              <div class="card-body">
+                Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the
+                <code>.show</code> class.
+              </div>
+            </div>
+          </div>
+          <div class="card mb-5 w-100 shadow rounded">
+            <div class="card-header bg-white" id="headingTwo">
+              <h2 class="mb-0">
+                <button type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo"
+                  class="btn btn-link text-left row w-100 d-flex justify-content-between text-dark"
+                  style="text-decoration: none;">
+                  <span class="h6 mb-0"><i class="bi bi-file-earmark"></i> How do I get access to my database?</span>
+                  <i class="bi bi-plus"></i>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse border-0" aria-labelledby="headingTwo" data-parent="#accordionOne">
+              <div class="card-body">
+                Some placeholder content for the second accordion panel. This panel is hidden by default.
+              </div>
+            </div>
+          </div>
+          <div class="card mb-5 w-100 shadow rounded">
+            <div class="card-header bg-white" id="headingThree">
+              <h2 class="mb-0">
+                <button type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree"
+                  class="btn btn-link text-left row w-100 d-flex justify-content-between text-dark"
+                  style="text-decoration: none;">
+                  <span class="h6 mb-0"><i class="bi bi-file-earmark"></i> How do I see previous orders?</span>
+                  <i class="bi bi-plus"></i>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse border-0" aria-labelledby="headingThree"
+              data-parent="#accordionOne">
+              <div class="card-body">
+                And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by
+                default.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion col p-0 m-0 w-100" style="gap: 2rem;" id="accordionTwo">
+          <div class="card mb-5 w-100 shadow rounded">
+            <div class="card-header bg-white" id="headingFour">
+              <h2 class="mb-0">
+                <button data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                  aria-controls="collapseFour"
+                  class="btn btn-link text-left row w-100 d-flex justify-content-between text-dark"
+                  style="text-decoration: none;">
+                  <span class="h6 mb-0"><i class="bi bi-file-earmark"></i> Which license do I need?</span>
+                  <i class="bi bi-plus"></i>
+                </button>
+              </h2>
+            </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-  </body>
+            <div id="collapseFour" class="collapse border-0" aria-labelledby="headingFour" data-parent="#accordionTwo">
+              <div class="card-body">
+                Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the
+                <code>.show</code> class.
+              </div>
+            </div>
+          </div>
+          <div class="card mb-5 w-100 shadow rounded">
+            <div class="card-header bg-white" id="headingFive">
+              <h2 class="mb-0">
+                <button type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                  aria-controls="collapseFive"
+                  class="btn btn-link text-left row w-100 d-flex justify-content-between text-dark"
+                  style="text-decoration: none;">
+                  <span class="h6 mb-0"><i class="bi bi-file-earmark"></i> How do I get access to my database?</span>
+                  <i class="bi bi-plus"></i>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFive" class="collapse border-0" aria-labelledby="headingFive" data-parent="#accordionTwo">
+              <div class="card-body">
+                Some placeholder content for the second accordion panel. This panel is hidden by default.
+              </div>
+            </div>
+          </div>
+          <div class="card mb-5 w-100 shadow rounded">
+            <div class="card-header bg-white" id="headingSix">
+              <h2 class="mb-0">
+                <button type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                  aria-controls="collapseSix"
+                  class="btn btn-link text-left row w-100 d-flex justify-content-between text-dark"
+                  style="text-decoration: none;">
+                  <span class="h6 mb-0"><i class="bi bi-file-earmark"></i> How do I see previous orders?</span>
+                  <i class="bi bi-plus"></i>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseSix" class="collapse border-0" aria-labelledby="headingSix" data-parent="#accordionTwo">
+              <div class="card-body">
+                And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by
+                default.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid mx-auto d-flex flex-column gap-3 pl-0 pr-0"
+    style=" width: 100%; overflow-x: hidden; box-sizing: border-box;">
+    <div class="d-flex flex-column justify-content-center align-items-center container mx-auto pb-5 mb-5">
+      <h4 class="mb-4">I want to start a new project.
+      </h4>
+      <div class="row justify-content-center" style="gap: 2rem;">
+        <button class="btn btn-primary">
+          Buy now <i class="bi bi-arrow-right ml-1"></i>
+        </button>
+        <button class="btn btn-link text-dark">
+          Learn more
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container-fluid mx-auto d-flex flex-column gap-3 pl-0 pr-0 text-white"
+    style="min-height: 200px; background: radial-gradient(268.97% 141.96% at 0% 102.43%, #171346 0%, #271348 100%); width: 100%; overflow-x: hidden; box-sizing: border-box;">
+    <span class="custom-diagonal-top w-100"></span>
+    <div class="d-flex flex-column container mx-auto pt-5 pb-5 mt-5 mb-5">
+      <div class="row w-100 justify-content-between align-items-center">
+        <div class="d-flex flex-column" style="height: fit-content;">
+          <h3>Brilliant solutions for your ideas</h3>
+          <h6 class="mb-4">Modern-looking websites.
+          </h6>
+        </div>
+        <div class="d-flex" style="gap: 1rem;">
+          <button class="btn btn-light fit-content" style="height: fit-content;">
+            <i class="bi bi-book text-primary"></i> Documentation
+          </button>
+          <button class="btn btn-primary" style="height: fit-content;">
+            Purchase now
+          </button>
+        </div>
+      </div>
+      <hr class="w-100">
+      <div class="row w-100 justify-content-between align-items-center" style="gap: 2rem;">
+        <div class="col-md-4 d-flex flex-column m-0 p-0" style="height: fit-content; gap: 1rem;">
+          <a href="#">
+            <img src="assets/odoo-white.svg" height="30" class="d-inline-block align-center logo-white" alt="Logo ODOO">
+          </a>
+          <p class="text-muted">Odoo attempts to bring the best development experience to designers and developers by
+            offering the tools needed for having a quick and solid start in most web projects.</p>
+          <div class="row text-muted m-0" style="gap: 2rem;">
+            <i class="bi bi-link-45deg"></i>
+            <i class="bi bi-github"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+          </div>
+        </div>
+        <div class="col-6" style="gap: 1rem;">
+          <div class="row">
+            <dic class="col">
+              <ul class="list-group list-group-flush mb-3">
+                <h6>Account</h6>
+                <li class="text-muted border-0 pr-0 pl-0 pt-1 pb-1 small list-group-item bg-transparent">
+                  <a href="#" class="text-muted">Profile</a>
+                </li>
+                <li class="text-muted border-0 pr-0 pl-0 pt-1 pb-1 small list-group-item bg-transparent">
+                  <a href="#" class="text-muted">Settings</a>
+                </li>
+                <li class="text-muted border-0 pr-0 pl-0 pt-1 pb-1 small list-group-item bg-transparent">
+                  <a href="#" class="text-muted">Billing</a>
+                </li>
+                <li class="text-muted border-0 pr-0 pl-0 pt-1 pb-1 small list-group-item bg-transparent">
+                  <a href="#" class="text-muted">Notifications</a>
+                </li>
+              </ul>
+            </dic>
+            <dic class="col">
+              <h6>About</h6>
+              <li class="text-muted border-0 pr-0 pl-0 pt-1 pb-1 small list-group-item bg-transparent">
+                <a href="#" class="text-muted">Services</a>
+              </li>
+              <li class="text-muted border-0 pr-0 pl-0 pt-1 pb-1 small list-group-item bg-transparent">
+                <a href="#" class="text-muted">Pricing</a>
+              </li>
+              <li class="text-muted border-0 pr-0 pl-0 pt-1 pb-1 small list-group-item bg-transparent">
+                <a href="#" class="text-muted">Contact</a>
+              </li>
+              <li class="text-muted border-0 pr-0 pl-0 pt-1 pb-1 small list-group-item bg-transparent">
+                <a href="#" class="text-muted">Careers</a>
+              </li>
+            </dic>
+            <dic class="col">
+              <h6>Company</h6>
+              <li class="text-muted border-0 pr-0 pl-0 pt-1 pb-1 small list-group-item bg-transparent">
+                <a href="#" class="text-muted">Community</a>
+              </li>
+              <li class="text-muted border-0 pr-0 pl-0 pt-1 pb-1 small list-group-item bg-transparent">
+                <a href="#" class="text-muted">Help center</a>
+              </li>
+              <li class="text-muted border-0 pr-0 pl-0 pt-1 pb-1 small list-group-item bg-transparent">
+                <a href="#" class="text-muted">Support</a>
+              </li>
+            </dic>
+          </div>
+        </div>
+      </div>
+      <hr class="w-100">
+      <div class="row w-100 justify-content-between align-items-center text-muted" style="gap: 2rem;">
+        <div class="col-6 d-flex flex-column m-0 p-0" style="height: fit-content; gap: 1rem;">
+          <p class="row m-0">© <strong class="text-white">Odoo</strong>. All rights reserved</p>
+        </div>
+        <ul class="list-group list-group-flush mb-3 d-flex flex-row">
+          <li class="text-muted border-0 pr-1 pl-1 pt-1 pb-1 small list-group-item bg-transparent">
+            <a href="#" class="text-muted">Terms</a>
+          </li>
+          <li class="text-muted border-0 pr-1 pl-1 pt-1 pb-1 small list-group-item bg-transparent">
+            <a href="#" class="text-muted">Privacy</a>
+          </li>
+          <li class="text-muted border-0 pr-1 pl-1 pt-1 pb-1 small list-group-item bg-transparent">
+            <a href="#" class="text-muted">Cookies</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
