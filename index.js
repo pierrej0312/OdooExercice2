@@ -68,10 +68,8 @@ function heartFill() {
 
 //GSAP ANIMATE PATH DRAWING
 
-document.addEventListener("DOMContentLoaded", function () {
-    gsap.registerPlugin(ScrollTrigger);
-
-    var theLine = document.querySelector('.theLine');
+$(document).ready(function () {
+    var theLine = $('.theLine')[0];
     var lineLength = theLine.getTotalLength();
 
     // Hide the line initially
