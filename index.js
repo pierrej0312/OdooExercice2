@@ -1,5 +1,4 @@
 // nav change on scroll
-
 $(document).ready(function () {
     $(window).scroll(function () {
         var scrollPosition = $(window).scrollTop();
@@ -65,3 +64,27 @@ $(document).ready(function() {
 function heartFill() {
     //changement de class bi-heart-fill
 }
+
+
+//GSAP ANIMATE PATH DRAWING
+
+document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    var theLine = document.querySelector('.theLine');
+    var lineLength = theLine.getTotalLength();
+
+    // Hide the line initially
+    gsap.set(theLine, { strokeDasharray: lineLength, strokeDashoffset: lineLength });
+
+    ScrollTrigger.create({
+        trigger: '#layer',
+        start: 'top center',
+        end: 'bottom center',
+        onUpdate: function (self) {
+            var progress = self.progress;
+            var drawLength = lineLength * progress;
+            gsap.set(theLine, { strokeDashoffset: lineLength - drawLength });
+        }
+    });
+});

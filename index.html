@@ -84,7 +84,6 @@
     </nav>
   </div>
 
-  <!--NAVIGATION END-->
 
   <!--HERO SECTION START-->
 
@@ -167,14 +166,13 @@
     </header>
   </div>
 
-  <!--HERO SECTION END-->
 
   <span class="header-background"></span>
 
   <!--MAIN START INFO COMM BLOC SEO-->
 
   <main class="container-fluid mx-auto pt-5 mb-5 pb-5 d-flex flex-column gap-3"
-    style="min-height: 200vh; gap: 12rem; width: 100%; overflow-x: hidden; box-sizing: border-box;">
+    style="gap: 12rem; width: 100%; overflow-x: hidden; box-sizing: border-box;">
 
 
     <!--CONTENT 1-->
@@ -409,10 +407,21 @@
         Learn more <i class="bi bi-arrow-right ml-1"></i>
       </button>
     </div>
+
+
+    <!--PATH ANIMATED GSAP-->
+    <svg version="1.1" class="position-absolute t-2" id="layer" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 187.11 513.33"
+      style="enable-background:new 0 0 187.11 513.33; z-index: -1; left: 50%; transform: translateX(-50%); height: 2100px; opacity: .5;" xml:space="preserve">
+      <path class="theLine"
+      style="fill:none;stroke:#E2E2E2;stroke-width:3;stroke-miterlimit:10;" d="M36,20.15c0,0,139.11,16.52,139.11,137.96
+      S17.77,210.89,17.77,355.44s155.45,145.44,155.45,145.44"/>
+    </svg>
+
+
   </main>
 
 
-  <!--MAIN END-->
 
 
   <!--SECTION AWARDS START-->
@@ -534,7 +543,6 @@
     <span class="custom-diagonal-bottom w-100"></span>
   </section>
 
-  <!--SECTION AWARDS END-->
 
   <!--SECTION HELPFUL START-->
 
@@ -681,7 +689,6 @@
     </div>
   </section>
 
-  <!--SECTION HELPFUL END-->
 
 
   <!--SECTION CTA START-->
@@ -701,8 +708,6 @@
       </div>
     </div>
   </section>
-
-  <!--SECTION CTA END-->
 
 
   <!--FOOTER START-->
@@ -825,6 +830,14 @@
 
 
   <!-- Optional JavaScript -->
+
+  <!--GSAP drawpath -->
+
+  <script src="assets/js/GSAP/gsap.min.js"></script>
+  <script src="assets/js/GSAP/ScrollTrigger.min.js"></script>
+  <script src="assets/js/GSAP/MotionPathPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.min.js"></script>
+
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -836,6 +849,7 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="index.js"></script>
+
 </body>
 
 </html>
